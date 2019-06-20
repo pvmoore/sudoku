@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: bisque;
+    background-color: #444;
+    text-shadow: 3px 3px rgba(0,0,0,0.3);
+}
+#heading {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+#controls {
+
+}
+a {
+    color:bisque;
+    text-decoration: none;
+}
+a, a:link, a:visited, a:active, a:hover {
+    color:bisque;
+    text-decoration: none;
+}
+#container {
+    display: grid;
+    grid-template-columns: 600px 160px 300px;
+}
+#board {
+    grid-column: 1;
+    display: grid;
+    font-size: 32px;
+    padding: 2px;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    width: 50%;
+    margin: 10px;
+}
+.box {
+    display: grid;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #000;
+    background-color: #222;
+}
+.r1 {
+    grid-row: 1;
+}
+.r2 {
+    grid-row: 2;
+}
+.r3 {
+    grid-row: 3;
+}
+.c1 {
+    grid-column: 1;
+}
+.c2 {
+    grid-column: 2;
+}
+.c3 {
+    grid-column: 3;
+}
+#select-number {
+    display: none;
+    grid-column: 2;
+    margin: 15px auto;
+    padding: 10px;
+    column-count: 2;
+    column-gap: 2px;
+    row-gap: 2px;
+    font-size: 32px;
+    width:100px;
+    height: 400px;
+    background-color: #2f4f4f;
+    text-align: center;
+    border: 2px solid #3f5f5f;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    cursor: help;
+}
+#select-number p {
+    margin:0px;
+    padding:0px;
+}
+#select-number #selection {
+    grid-column: 1;
+}
+#select-number #scratch {
+    grid-column: 2;
+    font-size: 32px;
+    color: #666;
+}
+#select-number .lowlight {
+    color:#555;
+    text-shadow: none;
+    text-decoration: line-through;
+}
+.userPlaced {
+    color: #ffbb00;
+}
+.error {
+    background-color: #992317 !important;
+}
+.selected {
+    background-color: blueviolet !important;
+}
+.cell {
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #000;
+    background-color: #333;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    position: relative;
+}
+.value{
+}
+.scratch {
+    position: absolute;
+    top: 0px;
+    font-size: 11px;
+    color: #888;
+    text-align: left;
+}

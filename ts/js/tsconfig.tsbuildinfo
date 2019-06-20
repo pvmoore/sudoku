@@ -1,0 +1,220 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/board.ts": {
+        "version": "c73af861f88664339dc5cc5acb21c538fc94571cc642e55db4308505d2b83464",
+        "signature": "9631ed0d9c419327691212bf1ddbc82d12542406e996ddadc9b244e63f510129"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/util.ts": {
+        "version": "1992796caf36c6b40291937ced763c647cfac14521cff55c98eee7f5c9949f18",
+        "signature": "d534ef3e86c822521e7da9a1b4fe829ec3a22b7267961432c77727512e1db39c"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts": {
+        "version": "f1cfe2f86c6cca58549a8a3235d888a23c9b2f3fa6fa122253c3987e10b31320",
+        "signature": "046d267ef8c739bb2865c8097cf26a3432d5892a165eb5ba0a62365f0ad383d5"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/sudoku.ts": {
+        "version": "cbe187eae99e7e7dc7a8ab24622b0ba39982e38dbeadf619abeb721a16d0026d",
+        "signature": "b4443f40ec54ce80290e277c996de29dd27d1a27a329b19c95c33995a800dfbe"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts": {
+        "version": "852c58fb824ff7155750e63258f7610d453e695456d7497e181e0b543005d0bd",
+        "signature": "6145345daa7e3fc471e02b0af89c63087be54c17d5291c6dc6968bd6452c83da"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/controller.ts": {
+        "version": "b0a33cd2aff17355eeae8f6a499e134bf9de4c52b7a4147c36ee062eb0ecb661",
+        "signature": "5ff36eed929697c2dcf8ddbf899f1b727db742889d9c629b18fd3b02232ce13d"
+      },
+      "c:/pvmoore/javascript/sudoku/ts/prototypes.d.ts": {
+        "version": "fafa590259095e87c9c7f4f90fa162f1015d9d5eb64389e11c03198361ea80a3",
+        "signature": "fafa590259095e87c9c7f4f90fa162f1015d9d5eb64389e11c03198361ea80a3"
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 3,
+      "module": 5,
+      "lib": [
+        "lib.dom.d.ts",
+        "lib.es2016.d.ts"
+      ],
+      "outDir": "C:/pvmoore/javascript/sudoku/ts/js",
+      "removeComments": true,
+      "strict": true,
+      "alwaysStrict": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "baseUrl": "C:/pvmoore/javascript/sudoku/ts/",
+      "configFilePath": "C:/pvmoore/javascript/sudoku/ts/tsconfig.json"
+    },
+    "referencedMap": {
+      "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/board.ts",
+        "c:/pvmoore/javascript/sudoku/ts/util.ts"
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/sudoku.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/board.ts"
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts",
+        "c:/pvmoore/javascript/sudoku/ts/sudoku.ts",
+        "c:/pvmoore/javascript/sudoku/ts/util.ts"
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/controller.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts",
+        "c:/pvmoore/javascript/sudoku/ts/util.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/board.ts"
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/sudoku.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/board.ts"
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts": [
+        "c:/pvmoore/javascript/sudoku/ts/sudoku.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "c:/users/pvm_2_000/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "c:/pvmoore/javascript/sudoku/ts/board.ts",
+      [
+        "c:/pvmoore/javascript/sudoku/ts/util.ts",
+        [
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/util.ts",
+            "start": 237,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'count' does not exist on type 'any[]'."
+          },
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/util.ts",
+            "start": 419,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'remove' does not exist on type 'any[]'."
+          }
+        ]
+      ],
+      [
+        "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts",
+        [
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts",
+            "start": 1706,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'count' does not exist on type 'number[]'."
+          },
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts",
+            "start": 1910,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'count' does not exist on type 'number[]'."
+          },
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/board3x3x9.ts",
+            "start": 2114,
+            "length": 5,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'count' does not exist on type 'number[]'."
+          }
+        ]
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/sudoku.ts",
+      [
+        "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts",
+        [
+          {
+            "file": "c:/pvmoore/javascript/sudoku/ts/sudoku3x3x9.ts",
+            "start": 1466,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'remove' does not exist on type 'number[]'."
+          }
+        ]
+      ],
+      "c:/pvmoore/javascript/sudoku/ts/controller.ts",
+      "c:/pvmoore/javascript/sudoku/ts/prototypes.d.ts"
+    ]
+  },
+  "version": "3.5.1"
+}
