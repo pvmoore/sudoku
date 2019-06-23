@@ -3,6 +3,11 @@
 * mjs     - javascript modules
 * ts      - typescript
 * angular - [Angular](https://angular.io/ "Angular")
+    * Todo - Use shadow dom for styles
+
+* Todo - web components
+* Todo - React
+* Todo - Web assembly
 
 #### mjs
 * Requires nodejs
