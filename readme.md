@@ -19,6 +19,8 @@
 * Requires Angular 7
 * run `ng serve` in the angular directory to start the server
 * Go to http://localhost:4200/ in your browser
+    * Todo - Add example template usage
+    * Todo - Add example form usage
     * Todo - Use shadow dom for styles
 
 #### web-components
