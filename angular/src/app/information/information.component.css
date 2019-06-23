@@ -1,0 +1,22 @@
+fieldset {
+    font-size: 12px;
+    border-radius: 5px;
+    border-color: #999;
+    height: 100%;
+}
+legend {
+    font-weight: bold;
+}
+#information {
+    
+}
+#information textarea {
+    border-radius: 5px;
+    background-color: black;
+    color: aquamarine;
+    text-shadow: none;
+    font-size: 12px;
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}

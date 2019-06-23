@@ -1,0 +1,102 @@
+<!-- Standard 3 x 3 x 9 Sudoku board -->
+<div id="board" (click)="boardClicked($event)">
+    <div id="b0" class="box">
+        <div class="cell row0 col0 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col1 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col2 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col0 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col1 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col2 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col0 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col1 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col2 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b1" class="box">
+        <div class="cell row0 col3 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col4 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col5 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col3 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col4 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col5 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col3 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col4 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col5 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b2" class="box">
+        <div class="cell row0 col6 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col7 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row0 col8 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col6 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col7 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row1 col8 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col6 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col7 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row2 col8 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b3" class="box">
+        <div class="cell row3 col0 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col1 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col2 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col0 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col1 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col2 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col0 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col1 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col2 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b4" class="box">
+        <div class="cell row3 col3 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col4 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col5 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col3 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col4 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col5 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col3 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col4 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col5 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b5" class="box">
+        <div class="cell row3 col6 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col7 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row3 col8 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col6 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col7 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row4 col8 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col6 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col7 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row5 col8 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b6" class="box">
+        <div class="cell row6 col0 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col1 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col2 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col0 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col1 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col2 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col0 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col1 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col2 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b7" class="box">
+        <div class="cell row6 col3 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col4 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col5 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col3 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col4 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col5 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col3 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col4 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col5 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+    <div id="b8" class="box">
+        <div class="cell row6 col6 r1 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col7 r1 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row6 col8 r1 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col6 r2 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col7 r2 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row7 col8 r2 c3"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col6 r3 c1"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col7 r3 c2"><div class="value"></div><div class="scratch"></div></div>
+        <div class="cell row8 col8 r3 c3"><div class="value"></div><div class="scratch"></div></div>
+    </div>
+</div>
