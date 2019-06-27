@@ -6,6 +6,7 @@ export { Sudoku3x3x9 };
 class Sudoku3x3x9 extends Sudoku {
     private selectedCell:HTMLElement | null;
     private selectedCellIndex:number | null;
+
     private mouseDown = (pos:number, event:Event) => {
         const uiCell = event.currentTarget as HTMLElement;
         const isUser = this.board.get(pos).isUser;

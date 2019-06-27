@@ -110,7 +110,7 @@ export class BoardComponent implements OnInit, OnDestroy, EventListener<SudokuEv
     for(let c=0; c<9; c++) {
         setErr(".col"+c, this.sudokuService.board.isErrorCol(c));
     }
-}
+  }
   private updateCellUI(pos:number) {
     const uiCell = this.getUICell(pos) as HTMLElement;
     const uiValue = uiCell.firstElementChild as HTMLElement;

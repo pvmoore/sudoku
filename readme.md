@@ -25,5 +25,5 @@
 #### React
 * Todo
 
-#### web-assembly
+#### wasm
 * Todo

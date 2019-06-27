@@ -24,11 +24,11 @@ abstract class Board {
         return this.board[pos];
     }
     load() {
-        const game = localStorage.getItem("currentGame")!;
+        const game = localStorage.getItem("currentGame-ts")!;
         this.board = JSON.parse(game);
     }
     save() {
-        localStorage.setItem("currentGame", JSON.stringify(this.board));
+        localStorage.setItem("currentGame-ts", JSON.stringify(this.board));
     }
     abstract isErrorBox(b:number):boolean;
     abstract isErrorRow(r:number):boolean;

@@ -1,8 +1,11 @@
-export { isFunc, includePrototypes };
+export { isFunc, isArray, includePrototypes };
 function includePrototypes() {
 }
 function isFunc(f) {
     return typeof (f) == "function";
+}
+function isArray(a) {
+    return Array.isArray(a);
 }
 Array.prototype.count = function (value) {
     var count = 0;

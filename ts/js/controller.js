@@ -5,7 +5,7 @@ includePrototypes();
 let sudoku = null;
 function continueGame() {
     sudoku = new Sudoku3x3x9();
-    const game = localStorage.getItem("currentGame");
+    const game = localStorage.getItem("currentGame-ts");
     if (game) {
         sudoku.continuePuzzle();
     }

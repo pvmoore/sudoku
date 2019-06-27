@@ -1,4 +1,4 @@
-export { isFunc, includePrototypes };
+export { isFunc, isArray, includePrototypes };
 
 function includePrototypes() {
     // import this to include the object prototypes
@@ -7,6 +7,9 @@ function includePrototypes() {
 
 function isFunc(f:any) {
     return typeof(f) == "function";
+}
+function isArray(a:any) {
+    return Array.isArray(a);
 }
 
 Array.prototype.count = function<T>(this: Array<T>, value:T) {
