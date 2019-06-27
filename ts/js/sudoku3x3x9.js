@@ -4,7 +4,7 @@ import { Sudoku } from "./sudoku";
 class Sudoku3x3x9 extends Sudoku {
     constructor() {
         super(new Board3x3x9());
-        this.mouseDown2 = (pos, event) => {
+        this.mouseDown = (pos, event) => {
             const uiCell = event.currentTarget;
             const isUser = this.board.get(pos).isUser;
             if (this.selectedCell !== null) {

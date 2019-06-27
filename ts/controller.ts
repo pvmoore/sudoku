@@ -19,4 +19,3 @@ function newGame() {
     sudoku = new Sudoku3x3x9();
     sudoku.generateNewPuzzle();
 }
-

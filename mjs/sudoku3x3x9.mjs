@@ -1,6 +1,6 @@
-export {Sudoku3x3x9};
-import {Sudoku} from "./sudoku.mjs";
-import {Board3x3x9} from "./board3x3x9.mjs";
+export { Sudoku3x3x9 };
+import { Sudoku } from "./sudoku.mjs";
+import { Board3x3x9 } from "./board3x3x9.mjs";
 import * as util from "./util.mjs";
 
 class Sudoku3x3x9 extends Sudoku {
@@ -11,11 +11,11 @@ class Sudoku3x3x9 extends Sudoku {
             const uiCell = event.currentTarget;
             const isUser = this.board.get(pos).isUser;
 
-            if(this.selectedCell!==null) {
+            if(this.selectedCell !== null) {
                 this.selectedCell.classList.remove("selected");
             }
 
-            if(isUser && this.selectedCell!==uiCell) {
+            if(isUser && this.selectedCell !== uiCell) {
                 uiCell.classList.add("selected");
                 this.selectedCell = uiCell;
                 this.selectedCellIndex = pos;
@@ -26,10 +26,12 @@ class Sudoku3x3x9 extends Sudoku {
         };
         this.numberListener = (e) => {
             const number = parseInt(e.target.innerText) || 0;
-            if(number==0) return;
-            const isScratch = "scratch"==e.target.parentNode.id;
+            if(number == 0) return;
+            const isScratch = "scratch" == e.target.parentNode.id;
             const i = this.selectedCellIndex;
             const c = this.board.get(i);
+
+            if(!c.isUser) return;
 
             if(isScratch) {
                 // Toggle the scratch number
@@ -41,11 +43,13 @@ class Sudoku3x3x9 extends Sudoku {
                 c.scratch.sort();
             } else {
                 // Set the cell number
-                if(c.isUser && c.value!=number) {
+                if(c.value == number) {
+                    c.value = 0;
+                } else {
                     c.value = number;
-                    c.scratch = [];
-                    this.setErrorCells();
                 }
+                c.scratch = [];
+                this.setErrorCells();
             }
             this.updateCell(i);
             this.hideNumberSelector();
@@ -53,7 +57,7 @@ class Sudoku3x3x9 extends Sudoku {
         };
 
         const ns = document.getElementById("select-number");
-        ns.addEventListener("mousedown", e=>this.numberListener(e));
+        ns.addEventListener("mousedown", e => this.numberListener(e));
 
         this.selectedCell = null;
         this.selectedCellIndex = null;
@@ -70,30 +74,31 @@ class Sudoku3x3x9 extends Sudoku {
         this.reset();
         this.board.load();
 
-        for(let i=0; i<9*9; i++) {
+        for(let i = 0; i < 9 * 9; i++) {
             this.updateCell(i);
         }
+        this.setErrorCells();
     }
     generateNewPuzzle() {
         // todo - generate a random puzzle
         this.reset();
 
         [
-            0,2,8, 0,7,0, 0,3,1,
-            0,0,7, 0,0,5, 8,0,0,
-            6,0,0, 2,0,0, 0,0,0,
+            0, 2, 8, 0, 7, 0, 0, 3, 1,
+            0, 0, 7, 0, 0, 5, 8, 0, 0,
+            6, 0, 0, 2, 0, 0, 0, 0, 0,
 
-            0,0,0, 1,0,7, 0,0,5,
-            0,1,2, 0,0,0, 9,7,0,
-            7,0,0, 4,0,3, 0,0,0,
+            0, 0, 0, 1, 0, 7, 0, 0, 5,
+            0, 1, 2, 0, 0, 0, 9, 7, 0,
+            7, 0, 0, 4, 0, 3, 0, 0, 0,
 
-            0,0,0, 0,0,2, 0,0,6,
-            0,0,4, 5,0,0, 7,0,0,
-            5,3,0, 0,6,0, 2,4,0
-        ].forEach((v,i)=>{
+            0, 0, 0, 0, 0, 2, 0, 0, 6,
+            0, 0, 4, 5, 0, 0, 7, 0, 0,
+            5, 3, 0, 0, 6, 0, 2, 4, 0
+        ].forEach((v, i) => {
             const c = this.board.get(i);
             c.value = v;
-            c.isUser = v==0;
+            c.isUser = v == 0;
             c.scratch = [];
             this.updateCell(i);
         });
@@ -106,7 +111,7 @@ class Sudoku3x3x9 extends Sudoku {
         const c = this.board.get(pos);
 
         if(c.isUser) uiValue.classList.add("userPlaced");
-        uiValue.innerText = c.value==0 ? " " : c.value.toString();
+        uiValue.innerText = c.value == 0 ? " " : c.value.toString();
 
         c.scratch.sort();
         uiScratch.innerText = c.scratch.toString().replace(/,/g, "");
@@ -118,16 +123,16 @@ class Sudoku3x3x9 extends Sudoku {
 
         // hide values that don't make sense
         document.querySelectorAll(".lowlight")
-                .forEach(e=>e.classList.remove("lowlight"));
+            .forEach(e => e.classList.remove("lowlight"));
         const scratch = this.board.get(pos).scratch;
-        const values  = this.board.getBoxValues(this.board.getBoxIndex(pos));
+        const values = this.board.getBoxValues(this.board.getBoxIndex(pos));
         const uiSel = document.getElementById("selection");
         const uiScr = document.getElementById("scratch");
-        for(let i=0; i<9; i++) {
-            if(scratch.includes(i+1)) {
+        for(let i = 0; i < 9; i++) {
+            if(scratch.includes(i + 1)) {
                 uiScr.children[i].classList.add("lowlight");
             }
-            if(values.includes(i+1)) {
+            if(values.includes(i + 1)) {
                 uiSel.children[i].classList.add("lowlight");
             }
         }
@@ -135,7 +140,7 @@ class Sudoku3x3x9 extends Sudoku {
     hideNumberSelector() {
         const ns = document.getElementById("select-number");
         ns.style.display = "none";
-        if(this.selectedCell!==null) {
+        if(this.selectedCell !== null) {
             this.selectedCell.classList.remove("selected");
             this.selectedCell = null;
             this.selectedCellIndex = null;
@@ -144,37 +149,37 @@ class Sudoku3x3x9 extends Sudoku {
     setErrorCells() {
         // remove all errors
         document.querySelectorAll(".error")
-                .forEach(e=>e.classList.remove("error"));
+            .forEach(e => e.classList.remove("error"));
 
-        const setErr = (selector,flag) => {
+        const setErr = (selector, flag) => {
             if(flag) {
                 document.querySelectorAll(selector)
-                        .forEach(e=>e.classList.add("error"));
+                    .forEach(e => e.classList.add("error"));
             }
         };
         // boxes
-        for(let b=0; b<9; b++) {
-            setErr("#b"+b+" .cell", this.board.isErrorBox(b));
+        for(let b = 0; b < 9; b++) {
+            setErr("#b" + b + " .cell", this.board.isErrorBox(b));
         }
         // rows
-        for(let r=0; r<9; r++) {
-            setErr(".row"+r+"", this.board.isErrorRow(r));
+        for(let r = 0; r < 9; r++) {
+            setErr(".row" + r + "", this.board.isErrorRow(r));
         }
         // cols
-        for(let c=0; c<9; c++) {
-            setErr(".col"+c, this.board.isErrorCol(c));
+        for(let c = 0; c < 9; c++) {
+            setErr(".col" + c, this.board.isErrorCol(c));
         }
     }
     createUI() {
         const uiBoard = document.getElementById("board");
-        console.assert(uiBoard.children.length==0);
+        console.assert(uiBoard.children.length == 0);
 
-        for(let i=0; i<9; i++) {
+        for(let i = 0; i < 9; i++) {
             uiBoard.appendChild(makeBox(i));
         }
 
         // Add event listeners
-        for(let i = 0; i<9*9; i++) {
+        for(let i = 0; i < 9 * 9; i++) {
             const cell = this.getUICell(i);
             cell.addEventListener("mousedown", e => this.mouseDown(i, e));
         }
@@ -187,30 +192,30 @@ class Sudoku3x3x9 extends Sudoku {
     }
     getUICell(boardPos) {
         const uiBox = this.getUIBox(boardPos);
-        const r     = Math.trunc(boardPos%27/9);
-        const c     = Math.trunc(boardPos%3);
-        const cell  = c+r*3;
+        const r = Math.trunc(boardPos % 27 / 9);
+        const c = Math.trunc(boardPos % 3);
+        const cell = c + r * 3;
         return uiBox.childNodes[cell];
     }
     getUIBox(boardPos) {
-        console.assert(boardPos>=0 && boardPos < 82, `Invalid boardPos ${boardPos}`);
+        console.assert(boardPos >= 0 && boardPos < 82, `Invalid boardPos ${boardPos}`);
 
         const uiBoard = document.getElementById("board");
-        const r   = Math.trunc(boardPos/(9*3));
-        const c   = Math.trunc(boardPos%9/3);
-        const box = r*3+c;
+        const r = Math.trunc(boardPos / (9 * 3));
+        const c = Math.trunc(boardPos % 9 / 3);
+        const box = r * 3 + c;
         return uiBoard.children[box];
     }
 }
 //-----------------------------------------------------------------------------------------
 function makeBox(boxNum) {
     const box = document.createElement("div");
-    box.setAttribute("id", "b"+boxNum);
+    box.setAttribute("id", "b" + boxNum);
     box.setAttribute("class", "box");
-    box.style.gridRow    = 1 + boxNum / 3;
+    box.style.gridRow = 1 + boxNum / 3;
     box.style.gridColumn = 1 + boxNum % 3;
 
-    for(let i=0; i<9; i++) {
+    for(let i = 0; i < 9; i++) {
         box.appendChild(makeCell(boxNum, i));
     }
 
@@ -219,13 +224,13 @@ function makeBox(boxNum) {
 function makeCell(boxNum, cellNum) {
     const cell = document.createElement("div");
     //cell.setAttribute("id" , "b"+boxNum+"c"+cellNum);
-    const r = Math.trunc(cellNum/3) + Math.trunc(boxNum/3)*3;
-    const c = Math.trunc(cellNum%3) + Math.trunc(boxNum%3)*3;
-    cell.classList.add("row"+r);
-    cell.classList.add("col"+c);
+    const r = Math.trunc(cellNum / 3) + Math.trunc(boxNum / 3) * 3;
+    const c = Math.trunc(cellNum % 3) + Math.trunc(boxNum % 3) * 3;
+    cell.classList.add("row" + r);
+    cell.classList.add("col" + c);
     cell.classList.add("cell");
-    cell.classList.add("r"+(1+Math.trunc(cellNum/3)));
-    cell.classList.add("c"+(1+Math.trunc(cellNum%3)));
+    cell.classList.add("r" + (1 + Math.trunc(cellNum / 3)));
+    cell.classList.add("c" + (1 + Math.trunc(cellNum % 3)));
     //cell.innerText = "0";
 
     const a = document.createElement("div");
