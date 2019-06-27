@@ -19,11 +19,14 @@
     * Todo - Add example form usage
     * Todo - Use shadow dom for styles
 
+#### wasm
+* run `node app.js` in the wasm directory to start the server
+* Go to http://127.0.0.1:3000/ in your browser
+
 #### web-components
 * Todo
 
 #### React
 * Todo
 
-#### wasm
-* Todo
+
