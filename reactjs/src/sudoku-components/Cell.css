@@ -1,0 +1,48 @@
+.r1 {
+    grid-row: 1;
+}
+.r2 {
+    grid-row: 2;
+}
+.r3 {
+    grid-row: 3;
+}
+.c1 {
+    grid-column: 1;
+}
+.c2 {
+    grid-column: 2;
+}
+.c3 {
+    grid-column: 3;
+}
+
+.userPlaced {
+    color: #ffcc33;
+}
+.error {
+    background-color: #992317 !important;
+}
+.selected {
+    border: 2px solid blueviolet !important;
+}
+.cell {
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid #000;
+    background-color: #333;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    position: relative;
+}
+.value{
+    
+}
+.scratch {
+    position: absolute;
+    top: 0px;
+    font-size: 11px;
+    color: #888;
+    text-align: left;
+}

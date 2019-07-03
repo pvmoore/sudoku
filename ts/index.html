@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="cleartype" content="on" />
     <title>Sudoku</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="module">
-        import {continueGame,newGame} from "./js/controller.js";
+        import { continueGame, newGame } from "./js/controller.js";
         continueGame();
 
         window.startNewGame = () => {
@@ -14,6 +15,7 @@
         };
     </script>
 </head>
+
 <body>
     <div id="heading">Sudoku</div>
 
@@ -47,4 +49,5 @@
         <div id="controls"><a onclick="startNewGame();">New Game</a></div>
     </div>
 </body>
+
 </html>

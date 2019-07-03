@@ -1,0 +1,7 @@
+#sudoku {
+    
+}
+#container {
+    display: grid;
+    grid-template-columns: 600px 140px 300px;
+}

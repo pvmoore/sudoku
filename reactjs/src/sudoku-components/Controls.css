@@ -1,0 +1,10 @@
+#controls {
+    margin: 15px;
+}
+#controls button {
+    font-size:20px;
+    font-family: 'Segoe UI';
+}
+#controls button:hover {
+    color:darkred;
+}

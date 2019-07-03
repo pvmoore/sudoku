@@ -1,0 +1,19 @@
+.box {
+    display: grid;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #000;
+    background-color: #222;
+}
+#b0 {
+    grid-row: 1;
+    grid-column: 1;
+}
+#b1 {
+    grid-row: 1;
+    grid-column: 2;
+}
+#b2 {
+    grid-row: 1;
+    grid-column: 3;
+}

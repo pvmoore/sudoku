@@ -23,10 +23,14 @@
 * run `node app.js` in the wasm directory to start the server
 * Go to http://127.0.0.1:3000/ in your browser
 
+#### React
+* Requires react, react-dom, react-redux and redux
+* run `npm start` in the reactjs directory to start the server
+* Go to http://localhost:3000/ in your browser
+
 #### web-components
 * Todo
 
-#### React
-* Todo
+
 
 
