@@ -1,0 +1,19 @@
+{
+  "name": "mjs",
+  "version": "1.0.0",
+  "description": "Javascript module version of Sudoku",
+  "main": "app.js",
+  "scripts": {
+    "start": "node express",
+    "dev": "nodemon express",
+    "app": "node app"
+  },
+  "author": "pvmoore",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

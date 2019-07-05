@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="cleartype" content="on" />
@@ -7,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="module" src="controller.mjs"></script>
     <script type="module">
-        import {continueGame,newGame} from "./controller.mjs";
+        import { continueGame, newGame } from "./controller.mjs";
         continueGame();
 
         window.startNewGame = () => {
@@ -15,8 +16,9 @@
         };
     </script>
 </head>
+
 <body>
-    <div id="heading">Sudoku</div>
+    <div id="heading">Sudoku (Javascript modules)</div>
 
     <div id="container">
         <div id="board"></div>
@@ -48,4 +50,5 @@
         <div id="controls"><a onclick="startNewGame();">New Game</a></div>
     </div>
 </body>
+
 </html>

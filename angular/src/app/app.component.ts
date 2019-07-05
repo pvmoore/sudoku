@@ -1,7 +1,7 @@
 import { SudokuService } from './sudoku.service';
 import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import * as util from "./util";
-import {InformationService} from "./information.service";
+import { InformationService } from "./information.service";
 
 @Component({
   selector: 'sudoku',
@@ -10,11 +10,10 @@ import {InformationService} from "./information.service";
   encapsulation: ViewEncapsulation.None  // disable shadow dom
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  title = 'Sudoku (Angular 7)';
+  title = 'Sudoku (Angular 8)';
 
-  constructor(private sudokuService:SudokuService,
-              private infoService:InformationService) 
-  {
+  constructor(private sudokuService: SudokuService,
+    private infoService: InformationService) {
     // Include prototypes from util.ts
     util.includePrototypes();
   }
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     console.log("ngAfterViewInit()");
 
     const game = localStorage.getItem("currentGame");
-    if(game) {
+    if (game) {
       this.sudokuService.continuePuzzle();
     } else {
       this.sudokuService.newPuzzle();
